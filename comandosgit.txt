@@ -1,0 +1,11 @@
+Comandos Git
+git config user.name "nome"
+git config user.email "email"
+git init
+
+git status
+git add *
+git commit - "comentario" 
+git log
+git log --online
+
