@@ -20,3 +20,7 @@ git checkout <file>           ;descarta as alteraçoes antes de adicionar ao arq
 git reset HEAD <file>         ;remove as alterações após adicionar ao arquivo original, mas não as descarta
 git reset --hard versao       ;remove o commit especificado
 
+git checkout -b <branch>      ;cria um novo ramo
+git merge <branch>            ;une os ramos master com teste ;tem que estar no ramo master
+
+
