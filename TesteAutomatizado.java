@@ -20,7 +20,6 @@ public class TesteAutomatizado {
 
         //submete o form
         //campoDeTexto.submit(); 
-        //version2
         
         Thread.sleep(5000);
         driver.findElement(By.name("btnI")).click();
