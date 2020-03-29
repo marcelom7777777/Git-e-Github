@@ -4,8 +4,9 @@ git config user.email "email"
 git init
 
 git status
-git add *
-git commit - "comentario" 
+git add *                      
+git commit -m "comentario" 
+git commit -am "comentario"  ; equivale aos dois comandos acima 
 git log
-git log --online
+git log --onelinegit
 
