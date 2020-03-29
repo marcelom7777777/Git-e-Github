@@ -3,9 +3,9 @@ git config user.name "nome"
 git config user.email "email"
 git init                      ;inicializa o git
 
-git status                    ;mostra o status no repositorio ;se tem algo pendente
-git add *                     ;adiciona as alterações no arquivo do repositorio
-git commit -m "comentario"    ;grava o arquivo em .git 
+git status                    ;mostra o status da pasta do projeto;se tem algo pendente e orienta o que pode ser feito
+git add *                     ;adiciona as alterações no arquivo original que será comitado
+git commit -m "comentario"    ;grava em .git (repositório) apenas as alteraçãoes feitas no arquivo orginal 
 git commit -am "comentario"   ;equivale aos dois comandos acima 
 git log                       ;mostra o log completo dos commit
 
@@ -13,4 +13,10 @@ git log --oneline             ;mostro o log simplificado dos commit
 git checkout versao           ;retorna para a versão (pegar versão do git log --oneline) indicada
 
 git branch                    ;mostra o ramo atual
-git checkout master           ;retorna para o ramo master
+git checkout master           ;retorna para a últmima versão
+
+git diff                      ;mostra as alterações antes de adicionar ao arquivo original
+git checkout <file>           ;descarta as alteraçoes antes de adicionar ao arquivo original
+git reset HEAD <file>         ;remove as alterações após adicionar ao arquivo original, mas não as descarta
+git reset --hard versao       ;remove o commit especificado
+
