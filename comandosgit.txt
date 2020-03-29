@@ -1,6 +1,6 @@
 Comandos Git
-git config user.name "nome"
-git config user.email "email"
+git config --global user.name "nome"
+git config --global user.email "email"
 git init                      ;inicializa o git
 
 git status                    ;mostra o status da pasta do projeto;se tem algo pendente e orienta o que pode ser feito
@@ -21,6 +21,9 @@ git reset HEAD <file>         ;remove as alterações após adicionar ao arquivo
 git reset --hard versao       ;remove o commit especificado
 
 git checkout -b <branch>      ;cria um novo ramo
-git merge <branch>            ;une os ramos master com teste ;tem que estar no ramo master
+git merge <branch>            ;une os ramos master com o novo ramo;tem que estar no ramo master
+
+git push                      ;envia as alterações para o github
+git pull		      ;baixa as alterações feitas no github para a pasta local		
 
 
