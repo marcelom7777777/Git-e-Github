@@ -1,12 +1,16 @@
 Comandos Git
 git config user.name "nome"
 git config user.email "email"
-git init
+git init                      ;inicializa o git
 
-git status
-git add *                      
-git commit -m "comentario" 
-git commit -am "comentario"  ; equivale aos dois comandos acima 
-git log
-git log --onelinegit
+git status                    ;mostra o status no repositorio ;se tem algo pendente
+git add *                     ;adiciona as alterações no arquivo do repositorio
+git commit -m "comentario"    ;grava o arquivo em .git 
+git commit -am "comentario"   ;equivale aos dois comandos acima 
+git log                       ;mostra o log completo dos commit
 
+git log --oneline             ;mostro o log simplificado dos commit
+git checkout versao           ;retorna para a versão (pegar versão do git log --oneline) indicada
+
+git branch                    ;mostra o ramo atual
+git checkout master           ;retorna para o ramo master
